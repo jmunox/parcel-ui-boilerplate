@@ -1,8 +1,8 @@
 {
   "name": "parcelui",
-  "version": "0.1.0",
-  "description": "Parcel + Typescript + React/Preact + Router + CSS Modules + SASS + Jest + Api-Now",
-  "author": "Duc Nguyen",
+  "version": "0.1.1",
+  "description": "Parcel + Typescript + React/Preact + Router + CSS Modules + SASS + Jest + Api-Now + Bulma",
+  "author": "Duc Nguyen, jmunox",
   "private": false,
   "license": "MIT",
   "engines": {
@@ -32,17 +32,18 @@
     "api-now": "^0.3.5",
     "autoprefixer": "^9.6.1",
     "babel-jest": "^24.9.0",
+    "bulma": "^0.8.2",
     "concurrently": "^4.1.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "faker": "^4.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
-    "parcel": "^1.11.0",
+    "parcel": "1.12.4",
     "parcel-plugin-typed-css-modules": "^1.1.0",
-    "postcss-modules": "^1.4.1",
+    "postcss-modules": "^1.5.0",
     "rimraf": "^3.0.0",
-    "sass": "^1.22.10",
+    "sass": "1.26.5",
     "typescript": "^3.5.3"
   },
   "scripts": {
@@ -56,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngduc/parcelui.git"
+    "url": "https://github.com/jmunox/parcelui.git"
   },
   "keywords": [
     "parcel",
@@ -65,7 +66,8 @@
     "react",
     "router",
     "css",
-    "sass"
+    "sass",
+    "bulma"
   ],
   "prettier": {
     "printWidth": 120,
@@ -83,6 +85,9 @@
     "plugins": {
       "autoprefixer": {
         "grid": true
+      },
+      "postcss-modules": {
+        "camelCase": true
       }
     }
   },
