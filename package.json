@@ -48,7 +48,7 @@
   },
   "scripts": {
     "build": "rimraf ./dist && parcel build ./src/index.html",
-    "start": "parcel ./src/index.html",
+    "start": "parcel serve ./src/index.html",
     "mock-api": "$(cat .env | xargs -n1 echo export) && api-now ./tools/mockData/jsonData.js --port $API_PORT",
     "serve": "api-now --static ./dist",
     "dev": "concurrently -r \"tsc --noEmit --watch\" \"npm:start\" \"npm:mock-api\"",
