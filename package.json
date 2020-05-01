@@ -1,6 +1,6 @@
 {
   "name": "parcelui",
-  "version": "0.1.1",
+  "version": "0.1.0-bulma",
   "description": "Parcel + Typescript + React/Preact + Router + CSS Modules + SASS + Jest + Api-Now + Bulma",
   "author": "Duc Nguyen, jmunox",
   "private": false,
