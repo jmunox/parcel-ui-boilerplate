@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link as RouterLink } from 'react-router-dom'
+import {Link as RebassLink} from 'rebass'
 
 import * as css from './AppMenu.scss'
 
@@ -18,9 +19,10 @@ const ListItemLink = ({ label, to, ...rest }) => (
     path={to}
     children={({ match }) => (
       <li className={match ? 'active' : ''}>
-        <Link to={to} {...rest}>
+        <RebassLink { ...{ to, rest}}
+        as={RouterLink}>
           {label}
-        </Link>
+        </RebassLink>
       </li>
     )}
   />

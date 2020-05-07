@@ -1,3 +1,4 @@
 import * as React from 'react'
+import {Box} from 'rebass'
 
-export default () => <div>Contact Us Page</div>
+export default () => <Box>Contact Us Page</Box>
